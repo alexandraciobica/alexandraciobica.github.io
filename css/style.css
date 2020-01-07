@@ -308,7 +308,8 @@ h1, h2, h3, h4, h5, h6 {
           .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
             color: #d79922; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
-          color: #fff !important; }
+          /*color: $white!important;*/
+          color: #d79922; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
           list-style: none;
           padding: 0;
@@ -505,10 +506,12 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: 20px; }
       .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        color: rgba(255, 255, 255, 0.6);
+        /*color: rgba($white, .6);*/
+        color: black;
         font-size: 15px; }
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a.active {
-          color: #fff; }
+          /*color: $white;*/
+          color: #d79922; }
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
@@ -817,7 +820,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-  margin-bottom: -15em; }
+  margin-bottom: -11em; }
 
 .jm-sticky-top {
   position: -webkit-sticky;
@@ -914,3 +917,15 @@ p.small {
 
 #hands {
   background: url("../images/googleTripsPlus/hands.gif") center right no-repeat; }
+
+#microinteractions {
+  background: url("../images/googleTripsPlus/microinteractionsSystem.png") center right no-repeat;
+  background-size: 65%; }
+  #microinteractions img {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5); }
+
+.black-and-white-picture {
+  -webkit-filter: grayscale(90%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%); }

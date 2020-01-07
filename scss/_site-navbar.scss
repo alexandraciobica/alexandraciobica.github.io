@@ -129,7 +129,8 @@
 					}
 					.active {
 						> a {
-							color: $white!important;
+							/*color: $white!important;*/
+							color: $primary;
 						}
 					}
 					> li {
@@ -404,10 +405,13 @@
 						}
 						> a {
 							padding: 10px 10px;
-							color: rgba($white, .6);
+							/*color: rgba($white, .6);*/
+							color: black;
+
 							font-size: 15px;
 							&.active {
-								color: $white;
+								/*color: $white;*/
+								color: $primary;
 							}
 						}
 					}

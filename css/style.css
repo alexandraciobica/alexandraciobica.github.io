@@ -271,8 +271,9 @@ h1, h2, h3, h4, h5, h6 {
         top: 100%;
         position: absolute;
         text-align: left;
-        -webkit-box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
-        box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
+        /*box-shadow: 0 0px 4px 0px rgba(0,0,0,.25);*/
+        -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
         padding: 0px 0;
         margin-top: 20px;
         margin-left: 0px;
@@ -280,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-transition: 0.2s 0s;
         -o-transition: 0.2s 0s;
         transition: 0.2s 0s;
-        border-radius: 4px; }
+        /*border-radius: 4px;*/ }
         .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
           position: absolute; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
@@ -305,16 +306,17 @@ h1, h2, h3, h4, h5, h6 {
           -o-transition: 0s all;
           transition: 0s all;
           color: #343a40; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
+          .site-navbar .site-navigation .site-menu .has-children .dropdown a.active, .site-navbar .site-navigation .site-menu .has-children .dropdown a:hover {
             color: #d79922; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
           /*color: $white!important;*/
-          color: #d79922; }
+          color: #d79922 !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
           list-style: none;
           padding: 0;
           margin: 0;
-          min-width: 200px; }
+          min-width: 200px;
+          background-color: #fff; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li:first-child > a {
             border-top-left-radius: 4px;
             border-top-right-radius: 4px; }
@@ -323,10 +325,11 @@ h1, h2, h3, h4, h5, h6 {
             border-bottom-right-radius: 4px; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
             padding: 9px 20px;
-            display: block; }
+            display: block;
+            font-weight: 400; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
               background: #ebeef0;
-              color: #212529; }
+              color: #d79922; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
             right: 20px; }
@@ -335,9 +338,9 @@ h1, h2, h3, h4, h5, h6 {
             top: 0; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
             background: #ebeef0;
-            color: #212529; }
+            color: #d79922; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-        color: #fff; }
+        color: #d79922; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
         cursor: pointer; }
         .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {

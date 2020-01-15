@@ -316,20 +316,22 @@ jQuery(document).ready(function($) {
 
   };
   siteScroll();
-
+var $container = $('#posts');
   var siteIstotope = function() {
+
+
   	/* activate jquery isotope */
-	  var $container = $('#posts').isotope({
+	  $container.isotope({
 	    itemSelector : '.item',
 	    isFitWidth: true
 	  });
-
+    $(window).load(function(){
 	  $(window).resize(function(){
 	    $container.isotope({
 	      columnWidth: '.col-sm-3'
 	    });
 	  });
-	  
+	      });
 	  $container.isotope({ filter: '*' });
 
 	    // filter items on button click
@@ -340,6 +342,7 @@ jQuery(document).ready(function($) {
 	    $('#filters button').removeClass('active');
 	    $(this).addClass('active');
 	  });
+
   }
 
   siteIstotope();

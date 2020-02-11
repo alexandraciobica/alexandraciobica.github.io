@@ -22,10 +22,12 @@
 	}
 	&.inner-page {
 		&, & > .container > .row {
-			min-height: 600px;
-			height: calc(80vh);	
+			min-height: 450px;
+			height: calc(45vh);	
+			margin-top: 3rem;
 		}
 	}
+
 	h1 {
 		font-size: 8rem;
 		font-weight: 900;
@@ -183,6 +185,26 @@
 		border-top: 2px solid #333333;
 	}
 }
+
+.details-card {
+	padding: 30px;
+	background: #dedede;
+	
+	position: relative;
+	top: 0;
+
+	h3 {
+		font-size: 1.2rem;
+		/*color: $black;*/
+		color: lighten($black, 50%);
+	}
+	p {
+		color: lighten($black, 50%);
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
 .readmore {
 	position: relative;
 	padding-right: 20px;
@@ -515,6 +537,15 @@ p {
 
 #hands {
 	background: url("../images/googleTripsPlus/hands.gif") center right no-repeat;
+}
+#chatbot-header {
+	background: url("../images/chatbotHeader2.gif") center right no-repeat;
+	background-size: 80%;
+}
+
+#rejsekort-header {
+	background: url("../images/rejsekortHeader.gif") center right no-repeat;
+	background-size: 80%;
 }
 
 #microinteractions {

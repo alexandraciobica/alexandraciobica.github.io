@@ -73,7 +73,7 @@
 								<li><a href="googleTripsPlus.html">Google Trips Plus</a></li>
 								<li><a href="virtualAudiologist.html">Oticon Virtual Audiologist</a></li>
 								<li class="active"><a href="rejsekortUsabilityEvaluation.html">Rejsekort Usability Evaluation</a></li>
-								<li><a href="graphics.html">Graphics Gallery</a></li>
+								<!-- <li><a href="graphics.html">Graphics Gallery</a></li> -->
 							</ul>
 						</li>
 						<li><a href="http://alexandraciobica.github.io/images/cv/CV_AlexandraCiobica.pdf" class="nav-link">CV</a></li>
@@ -87,10 +87,10 @@
 		</div>
 	</div> <!-- END .site-navbar-wrap -->
 
-		<div class="site-blocks-cover" id="home-section">
+		<div class="site-blocks-cover inner-page" id="home-section">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-7 align-self-center jm-sticky-top ml-auto">
+				<div class="row" id="rejsekort-header">
+					<div class="col-md-7 align-self-center ml-auto">
 						<div class="intro ">
 							<div class="heading">
 								<h2>Rejsekort Usability Evaluation</h2>
@@ -110,14 +110,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-				<div class="service h-100">
+				<div class="details-card h-100">
 					<h3>Project details</h3>
 					<p class="mb-0"><strong>Duration:</strong> 3 months (spring 2019)</p>
 					<p><strong>Group:</strong> 4 people</p>
 				</div>
 				</div>
 				<div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-				<div class="service h-100">
+				<div class="details-card h-100">
 					<h3>Used tools</h3>
 					<p class="mb-1">SUS</p>
 					<p class="mb-1">NPS, Key Driver Analysis</p>
@@ -234,35 +234,6 @@
 				
 			</div>
 
-			<!-- <div class="row align-items-center mt-5 mb-5">
-				<div class="col-lg-5">
-					<div class="service dark h-100">
-						<blockquote class="mb-3">
-				
-						<p id="rasa">Rasa is an open source framework that offers the infrastructure needed for building an AI assistant. It has a NLU (natural language understanding) component - where the user intents are defined - and a Core component - made of the domain where all the utterances(responses, actions etc) of the bot are defined and stories that are the flows of the chat. Rasa also offers Rasa X, “a tool designed to make it easier to deploy and improve Rasa-powered assistants by learning from real conversations.” - Rasa Blog.</p>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-lg-6 ml-auto">
-					<p>The flows were implemented as <strong>stories</strong> in Rasa. The user <strong>intents</strong> were described with training examples to show the model how to interpret user messages. In the <strong>domain</strong>, the <strong>actions</strong> and <strong>utterances</strong> (templates, answers), of the chatbot were defined. An action example is that when the chatbot does not understand what the user is saying (the intent recognition threshold is lower than a set value) a fallback action is called that in this case replies with a default message (eg: “Sorry, I didn't understand. Can you say that again, please?”).</p>
-				</div>
-				
-			</div>
-
-
-			<div class="row align-items-center">
-				<div class="col-lg-12 ">
-					<p>After the chatbot was ready, we deployed it using RasaX and ngrok and we asked people to test it. In this way, we didn’t have to think about all the situations that can happen and train the model extensively before deploying; we could review all the conversations and use interactive learning to improve the assistant.</p>
-				</div>
-
-				
-				<div class="col-lg-12 mb-4">
-					<p><strong>This step was one full of iterations and training, where we tested, reviewed and repaired mistakes extensively until the chatbot was ready to test with real users.</strong></p>
-				</div>
-			</div>
-
- -->
-
 
 
 			<div class="row align-items-center">
@@ -282,7 +253,7 @@
 					<p class="small">SUS ranking using an adjective ranking scale (by <a href="https://www.semanticscholar.org/paper/Determining-what-individual-SUS-scores-mean%3A-adding-Bangor-Kortum/3399f83ff6149dc65b52600f52ed372be5a6aa86">A. Bangor et al</a>)</p>
 				</div>
 				<div class="col-lg-6">
-					<p>In 2019, for the given sample size, the Rejsekort system scored 69 on average, with a confidence interval between 66 and 73. Therefore, it is 95% certain that the score is in this interval. This means, using the adjective ratings (Figure 3), that the Rejsekort system is OK, almost GOOD.</p>
+					<p>In 2019, for the given sample size, the Rejsekort system scored 69 on average, with a confidence interval between 66 and 73. Therefore, it is 95% certain that the score is in this interval. This means, using the adjective ratings, that the Rejsekort system is OK, almost GOOD.</p>
 					<p>Compared to the previous years, the SUS score is relatively similar, but the one from 2019 is statistically significantly higher, especially when comparing 2016 to 2019 where the P-value is 0.0007 (extremely statistically significant). </p>
 				</div>
 			</div>
@@ -336,7 +307,7 @@
 				</div>
 				
 				<div class="col-lg-12 ml-auto mt-3">
-					<p><b>Result:</b> In order to validate or invalidate the assumption, the two groups were compared (see Table 4). Based on the P-value > 0.05, the two compared groups are not statistically significant, therefore the hypothesis turned out to be false. </p>
+					<p><b>Result:</b> In order to validate or invalidate the assumption, the two groups were compared. Based on the P-value > 0.05, the two compared groups are not statistically significant, therefore the hypothesis turned out to be false. </p>
 				</div>
 			</div>
 

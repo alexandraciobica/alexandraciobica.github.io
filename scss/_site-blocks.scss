@@ -534,26 +534,27 @@ p {
 		font-style: italic;
 	}
 }
+@media (min-width: 768px) {
+	#hands {
+		background: url("../images/googleTripsPlus/hands.gif") center right no-repeat;
+	}
+	#chatbot-header {
+		background: url("../images/chatbotHeader2.gif") center right no-repeat;
+		background-size: 80%;
+	}
 
-#hands {
-	background: url("../images/googleTripsPlus/hands.gif") center right no-repeat;
-}
-#chatbot-header {
-	background: url("../images/chatbotHeader2.gif") center right no-repeat;
-	background-size: 80%;
-}
+	#rejsekort-header {
+		background: url("../images/rejsekortHeader.gif") center right no-repeat;
+		background-size: 80%;
+	}
 
-#rejsekort-header {
-	background: url("../images/rejsekortHeader.gif") center right no-repeat;
-	background-size: 80%;
-}
-
-#microinteractions {
-	background: url("../images/googleTripsPlus/microinteractionsSystem.png") center right no-repeat;
-	background-size: 65%;
-	
-	img {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	#microinteractions {
+		background: url("../images/googleTripsPlus/microinteractionsSystem.png") center right no-repeat;
+		background-size: 65%;
+		
+		img {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+		}
 	}
 }
 
@@ -562,4 +563,29 @@ p {
   -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
   filter: grayscale(90%);
 }
+@media (max-width: 767px) {
+	.site-blocks-cover.inner-page{
+		min-height: 980px;
+		height: calc(98vh);	
+	}
+}
 
+@media (min-width:768px) and (max-width: 992px) {
+	.site-blocks-cover.inner-page{
+		min-height: 680px;
+		height: calc(68vh);	
+	}
+}
+
+/*@media (max-width: 991.98px)
+.site-blocks-cover .img-wrap .hero-slider:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    opacity: .5;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}*/

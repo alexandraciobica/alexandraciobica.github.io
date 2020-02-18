@@ -543,6 +543,9 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 450px;
     height: calc(45vh);
     margin-top: 3rem; }
+  .site-blocks-cover.inner-page.jabra {
+    min-height: 250px;
+    height: calc(25vh); }
   .site-blocks-cover h1 {
     font-size: 8rem;
     font-weight: 900;

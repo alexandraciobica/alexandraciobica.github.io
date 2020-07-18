@@ -13,8 +13,8 @@ body {
   margin-left:150px;*/
   animation: myOrbit 2.5s infinite linear;
   /*background-size: 100%;*/
-  height: 1.74mm;
-  width: 1.74mm;
+  height: 6.96mm;
+  width: 6.96mm;
   /*vertical-align: middle;*/
   position: fixed;
   top: 50%;
@@ -25,14 +25,14 @@ body {
     content: '';
     display: block;
     will-change: transform;
-    width: 1.74mm;
-    height: 1.74mm;
+    width: 6.96mm;
+    height: 6.96mm;
     /*border-radius: 20px;*/
     border-radius: 50%;
     background-color: red;
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(3cm) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(3cm) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(12cm) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(12cm) rotate(-360deg); }
 }

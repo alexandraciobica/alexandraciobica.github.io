@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+/*#parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.dot {
+  /* Some layout code… */
+/*  margin-top:150px;
+  margin-left:150px;*/
+  animation: myOrbit 2.5s infinite linear;
+  /*background-size: 100%;*/
+  height: 1.74mm;
+  width: 1.74mm;
+  /*vertical-align: middle;*/
+  position: fixed;
+  top: 50%;
+  left:50%;
+}
+
+.dot::after {
+    content: '';
+    display: block;
+    will-change: transform;
+    width: 1.74mm;
+    height: 1.74mm;
+    /*border-radius: 20px;*/
+    border-radius: 50%;
+    background-color: red;
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(7.47cm) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(7.47cm) rotate(-360deg); }
+}
